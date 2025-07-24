@@ -4687,3 +4687,17 @@ input, select, textarea {
 		}
 
 	}
+
+.split.contact h3,
+.split.contact p,
+.split.contact a {
+  color: #ffffff !important;
+}
+
+.posts p {
+  text-align: left;
+}
+
+.post.featured p {
+  font-style: normal;
+}
