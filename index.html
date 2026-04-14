@@ -1,179 +1,779 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+	<title>Justin Lee — Data Scientist & Analyst</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg:        #1e1e22;
+			--surface:   #25252b;
+			--surface-2: #2d2d35;
+			--border:    rgba(255,255,255,0.07);
+			--border-mid:rgba(255,255,255,0.13);
+			--accent:    #e8937a;
+			--accent-dim:rgba(232,147,122,0.12);
+			--text:      #d8d4ce;
+			--text-muted:#8c8880;
+			--text-dim:  #555250;
+			--white:     #f0ece6;
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+		html { scroll-behavior: smooth; }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Justin Lee<br />
-						Portfolio</h1>
-						<p>Data Scientist and Analyst well versed in SQL, Python, R, Tableau, Excel <br />
-						<a href="https://www.linkedin.com/in/justinminseoklee/">@justinminseoklee</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		body {
+			font-family: 'Nunito Sans', sans-serif;
+			font-weight: 300;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.65;
+			overflow-x: hidden;
+		}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
-					</header>
+		nav {
+			position: fixed;
+			top: 0; left: 0; right: 0;
+			z-index: 100;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 18px 52px;
+			background: rgba(30,30,34,0.92);
+			backdrop-filter: blur(14px);
+			border-bottom: 1px solid var(--border);
+		}
 
-				<!-- Main -->
-					<div id="main">
+		.nav-logo {
+			font-family: 'Lora', serif;
+			font-size: 1.1rem;
+			color: var(--white);
+			text-decoration: none;
+		}
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-								
-									<h2><a href="Fungal_Activity_Model.pdf">Fungal Competition Modeling using<br />
-									Coupled Differential Equations</a></h2>
-									<p>Designed and implemented a dynamic ODE system to model fungal population dynamics and biomass decomposition. Integrated growth-rate modifiers, Gaussian moisture response functions, and competitive interaction matrices to capture interspecies behavior. Performed parameter sweeps and stochastic simulations to assess system sensitivity, demonstrating how environmental fluctuations reduce decomposition efficiency while biodiversity stabilizes long-term outcomes.</p>
-								</header>
-								<a href="Fungal_Activity_Model.pdf" class="image main"><img src="images/deterministic.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="Fungal_Activity_Model.pdf" class="button large">View Project</a></li>
-								</ul>
-							</article>
+		.nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-									
-										<h2><a href="Skin_Cancer.pdf">Machine Learning for<br />
-										Skin Cancer Prediction</a></h2>
-									</header>
-									<a href="Skin_Cancer.pdf" class="image fit"><img src="images/Data_Mining.png" alt="" /></a>
-									<p>Developed predictive models to classify skin cancer status (benign vs. malignant) using a 50,000-observation Kaggle dataset with 50 predictor variables. Implemented advanced data mining techniques including chi-squared tests and t-tests for feature selection, reducing dimensionality from 50 to 18 critical predictors. Compared Logistic Regression, Random Forest, and XGBoost models through strategic model selection and missForest imputation, demonstrating that simpler models can outperform complex algorithms when coupled with rigorous feature engineering.</p>
-									<ul class="actions special">
-										<li><a href="Skin_Cancer.pdf" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="Sales_Insights.pdf">Power BI for<br />
-										Sales Insights</a></h2>
-									</header>
-									<a href="Sales_Insights.pdf" class="image fit"><img src="images/Revenue_Trend_Total.png" alt="" /></a>
-									<p>Built comprehensive business intelligence dashboards analyzing 2M+ sales transactions across 14 Indian markets for AtliQ Hardware Solutions. Revealed critical insights including 65.6% revenue decline, dangerous customer concentration (41.97% single dependency), and geographic risks. Delivered strategic recommendations for crisis management and market diversification using advanced Power BI visualizations and data modeling techniques.</p>
-									<ul class="actions special">
-										<li><a href="Sales_Insights.pdf" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="https://public.tableau.com/app/profile/justin.lee6819/viz/Interactive_Stock_Market/StockMarketDashboard">Interactive Stock Market<br />
-										in Tableau</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/justin.lee6819/viz/Interactive_Stock_Market/StockMarketDashboard" class="image fit"><img src="images/price_percent_change.png" alt="" /></a>
-									<p>Developed an interactive Tableau dashboard visualizing multi-year stock market data for major companies. Analyzed trading volume spikes, daily percent price changes, and long-term market dynamics. Enabled users to explore correlations, distributions, and volatility patterns with drill-down interactivity. Highlighted insights on trading behavior, market efficiency, and risk exposure using advanced Tableau visualizations and calculated fields.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/justin.lee6819/viz/Interactive_Stock_Market/StockMarketDashboard" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="Cognitive_Temperature.pdf">Data Analysis<br />
-										in R</a></h2>
-									</header>
-									<a href="Cognitive_Temperature.pdf" class="image fit"><img src="images/residuals.png" alt="" /></a>
-									<p>In this project, we designed a factorial experiment to evaluate the effects of ambient temperature and IQ level 
-									on arithmetic test performance. Used R to conduct two-way ANOVA with blocking, Tukey HSD post-hoc analysis, 
-									and residual diagnostics. Found significant main effects and interaction; lower-IQ participants showed greater 
-									performance decline under thermal stress.</p>
-									<ul class="actions special">
-										<li><a href="Cognitive_Temperature.pdf" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="#">Algorithm Development<br />
-										in Python</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Built a custom player ranking system inspired by AAA games, implementing skill-based matchmaking logic in Python. Modeled ranking adjustments using custom decay functions, tested across simulated competitive environments. Focused on fairness, stability, and progression accuracy to support long-term engagement and competitive integrity.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="#">SQL for<br />
-										Data Science</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Designed a high-performance algorithmic trading system using SQL and Python to analyze 1.2M+ minute-level stock records. Outperformed benchmark strategies with a 112% simulated ROI over 9 months. Applied real-time pattern recognition and executed trades with sub-300ms latency in a QuantConnect environment.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+		.nav-links a {
+			font-size: 0.76rem;
+			letter-spacing: 0.09em;
+			text-transform: uppercase;
+			color: var(--text-muted);
+			text-decoration: none;
+			transition: color 0.2s;
+		}
 
-					</div>
+		.nav-links a:hover { color: var(--accent); }
 
-				<!-- Footer -->
-						
+		.nav-resume {
+			background: var(--accent) !important;
+			color: #1a0e0a !important;
+			padding: 8px 20px;
+			border-radius: 3px;
+			font-weight: 600 !important;
+		}
 
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>88 South Broadway, Unit 1503<br />
-								Millbrae, CA 94030</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+1 (415) 310-7609</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">justin1275lee@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/justinminseoklee/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.instagram.com/justin_lee.23/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/JustinLee23" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+		#hero {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			padding: 0 52px 88px;
+			position: relative;
+			overflow: hidden;
+		}
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		.hero-glow-a {
+			position: absolute;
+			bottom: -100px; left: -140px;
+			width: 680px; height: 680px;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(232,147,122,0.07) 0%, transparent 65%);
+			pointer-events: none;
+		}
 
+		.hero-glow-b {
+			position: absolute;
+			top: 60px; right: -80px;
+			width: 480px; height: 480px;
+			border-radius: 50%;
+			background: radial-gradient(circle, rgba(210,190,170,0.04) 0%, transparent 65%);
+			pointer-events: none;
+		}
+
+		.hero-eyebrow {
+			font-size: 0.72rem;
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+			color: var(--accent);
+			margin-bottom: 22px;
+		}
+
+		h1 {
+			font-family: 'Lora', serif;
+			font-size: clamp(2.8rem, 6vw, 5.5rem);
+			font-weight: 400;
+			line-height: 1.1;
+			color: var(--white);
+		}
+
+		h1 em { font-style: italic; color: var(--accent); }
+
+		.hero-sub {
+			font-size: 0.93rem;
+			color: var(--text-muted);
+			max-width: 490px;
+			line-height: 1.8;
+			margin-top: 24px;
+			margin-bottom: 40px;
+		}
+
+		.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 13px 26px;
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 0.76rem;
+			font-weight: 600;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			text-decoration: none;
+			border-radius: 3px;
+			transition: all 0.2s;
+			cursor: pointer;
+			border: none;
+		}
+
+		.btn-primary { background: var(--accent); color: #1a0e0a; }
+		.btn-primary:hover { opacity: 0.87; transform: translateY(-1px); }
+		.btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border-mid); }
+		.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+		.hero-stats {
+			position: absolute;
+			right: 52px; bottom: 88px;
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+			text-align: right;
+		}
+
+		.stat-num {
+			font-family: 'Lora', serif;
+			font-size: 1.9rem;
+			color: var(--white);
+			line-height: 1;
+		}
+
+		.stat-label {
+			font-size: 0.64rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: var(--text-dim);
+			margin-top: 3px;
+		}
+
+		section { padding: 96px 52px; }
+
+		.section-label {
+			font-size: 0.68rem;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: var(--accent);
+			margin-bottom: 14px;
+		}
+
+		h2 {
+			font-family: 'Lora', serif;
+			font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+			font-weight: 400;
+			line-height: 1.15;
+			color: var(--white);
+			margin-bottom: 48px;
+		}
+
+		#about {
+			background: var(--surface);
+			border-top: 1px solid var(--border);
+			border-bottom: 1px solid var(--border);
+		}
+
+		.about-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 80px;
+			align-items: start;
+			max-width: 1060px;
+		}
+
+		.about-text p {
+			font-size: 0.88rem;
+			color: var(--text-muted);
+			line-height: 1.85;
+			margin-bottom: 18px;
+		}
+
+		.about-text strong { color: var(--text); font-weight: 600; }
+
+		.about-details { display: flex; flex-direction: column; }
+
+		.detail-row {
+			display: flex;
+			flex-direction: column;
+			gap: 3px;
+			padding: 17px 0;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.detail-row:first-child { padding-top: 0; }
+		.detail-row:last-child { border-bottom: none; }
+
+		.detail-key {
+			font-size: 0.62rem;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			color: var(--text-dim);
+		}
+
+		.detail-val { font-size: 0.83rem; color: var(--text); line-height: 1.5; }
+		.detail-val a { color: var(--accent); text-decoration: none; }
+		.detail-val a:hover { text-decoration: underline; }
+
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+			gap: 1px;
+			background: var(--border);
+			border: 1px solid var(--border);
+			max-width: 1060px;
+		}
+
+		.skill-card {
+			background: var(--bg);
+			padding: 28px;
+			transition: background 0.2s;
+		}
+
+		.skill-card:hover { background: var(--surface-2); }
+
+		.skill-card-title {
+			font-size: 0.68rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--text-muted);
+			margin-bottom: 16px;
+		}
+
+		.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+		.skill-tag {
+			font-size: 0.71rem;
+			padding: 4px 11px;
+			border-radius: 20px;
+			background: var(--accent-dim);
+			color: var(--accent);
+			border: 1px solid rgba(232,147,122,0.2);
+		}
+
+		#projects {
+			background: var(--surface);
+			border-top: 1px solid var(--border);
+		}
+
+		.filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 44px; }
+
+		.filter-btn {
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 0.71rem;
+			font-weight: 600;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			padding: 7px 18px;
+			border: 1px solid var(--border-mid);
+			border-radius: 20px;
+			background: transparent;
+			color: var(--text-muted);
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+
+		.filter-btn:hover, .filter-btn.active {
+			border-color: var(--accent);
+			color: var(--accent);
+			background: var(--accent-dim);
+		}
+
+		.projects-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			gap: 1px;
+			background: var(--border);
+			border: 1px solid var(--border);
+			max-width: 1060px;
+		}
+
+		.project-card {
+			background: var(--bg);
+			padding: 34px;
+			transition: background 0.22s;
+		}
+
+		.project-card:hover { background: var(--surface-2); }
+
+		.project-card.featured {
+			grid-column: 1 / -1;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 52px;
+		}
+
+		.project-meta {
+			display: flex;
+			gap: 8px;
+			flex-wrap: wrap;
+			margin-bottom: 14px;
+			align-items: center;
+		}
+
+		.project-tag {
+			font-size: 0.62rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			padding: 3px 10px;
+			border-radius: 20px;
+			font-family: 'Nunito Sans', sans-serif;
+			font-weight: 600;
+		}
+
+		.tag-project    { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(232,147,122,0.22); }
+		.tag-internship { background: rgba(198,168,100,0.12); color: #c4a55a; border: 1px solid rgba(198,168,100,0.22); }
+
+		.project-timeframe { font-size: 0.64rem; color: var(--text-dim); margin-left: auto; }
+
+		.project-card h3 {
+			font-family: 'Lora', serif;
+			font-size: 1.3rem;
+			font-weight: 400;
+			line-height: 1.3;
+			color: var(--white);
+			margin-bottom: 13px;
+		}
+
+		.project-card p {
+			font-size: 0.81rem;
+			color: var(--text-muted);
+			line-height: 1.8;
+			margin-bottom: 20px;
+		}
+
+		.project-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 0.7rem;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			font-weight: 600;
+			color: var(--accent);
+			text-decoration: none;
+			transition: gap 0.2s;
+		}
+
+		.project-link:hover { gap: 10px; }
+
+		.project-tech { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 18px; }
+
+		.tech-pill {
+			font-size: 0.65rem;
+			padding: 3px 9px;
+			border-radius: 3px;
+			background: var(--surface-2);
+			color: var(--text-dim);
+			border: 1px solid var(--border);
+		}
+
+		#experience { border-top: 1px solid var(--border); }
+
+		.experience-list { max-width: 760px; }
+
+		.exp-item {
+			display: grid;
+			grid-template-columns: 155px 1fr;
+			gap: 40px;
+			padding: 40px 0;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.exp-item:last-child { border-bottom: none; }
+
+		.exp-date { font-size: 0.71rem; color: var(--text-dim); padding-top: 3px; }
+
+		.exp-content h3 {
+			font-family: 'Lora', serif;
+			font-size: 1.05rem;
+			font-weight: 400;
+			color: var(--white);
+			margin-bottom: 4px;
+		}
+
+		.exp-company { font-size: 0.77rem; color: var(--accent); margin-bottom: 14px; }
+		.exp-company span { color: var(--text-dim); }
+
+		.exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+
+		.exp-bullets li {
+			font-size: 0.8rem;
+			color: var(--text-muted);
+			line-height: 1.7;
+			padding-left: 18px;
+			position: relative;
+		}
+
+		.exp-bullets li::before {
+			content: '·';
+			position: absolute;
+			left: 0;
+			color: var(--accent);
+			font-size: 1rem;
+			line-height: 1.4;
+		}
+
+		.exp-bullets strong { color: var(--text); font-weight: 600; }
+
+		footer {
+			border-top: 1px solid var(--border);
+			padding: 44px 52px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.footer-brand {
+			font-family: 'Lora', serif;
+			font-size: 1.2rem;
+			font-weight: 400;
+			color: var(--white);
+		}
+
+		.footer-links { display: flex; gap: 28px; list-style: none; }
+
+		.footer-links a {
+			font-size: 0.7rem;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: var(--text-dim);
+			text-decoration: none;
+			transition: color 0.2s;
+		}
+
+		.footer-links a:hover { color: var(--accent); }
+
+		.footer-copy {
+			font-size: 0.66rem;
+			color: var(--text-dim);
+			width: 100%;
+			text-align: center;
+			padding-top: 20px;
+			border-top: 1px solid var(--border);
+		}
+
+		.fade-up {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: opacity 0.6s ease, transform 0.6s ease;
+		}
+
+		.fade-up.visible { opacity: 1; transform: none; }
+		.project-card.hidden { display: none; }
+
+		@media (max-width: 800px) {
+			nav { padding: 16px 24px; }
+			.nav-links { gap: 16px; }
+			#hero, section, footer { padding-left: 24px; padding-right: 24px; }
+			.about-grid { grid-template-columns: 1fr; gap: 40px; }
+			.projects-grid { grid-template-columns: 1fr; }
+			.project-card.featured { grid-template-columns: 1fr; gap: 28px; }
+			.exp-item { grid-template-columns: 1fr; gap: 8px; }
+			.hero-stats { display: none; }
+		}
+	</style>
+</head>
+<body>
+
+<nav>
+	<a href="#hero" class="nav-logo">Justin Lee</a>
+	<ul class="nav-links">
+		<li><a href="#about">About</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#experience">Experience</a></li>
+		<li><a href="Lee_Justin_Resume.docx" download class="nav-resume">Download CV</a></li>
+	</ul>
+</nav>
+
+<section id="hero">
+	<div class="hero-glow-a"></div>
+	<div class="hero-glow-b"></div>
+
+	<div class="hero-eyebrow">UCLA Statistics & Data Science · Class of 2027</div>
+	<h1>Turning raw data<br>into <em>decisions</em><br>that matter.</h1>
+	<p class="hero-sub">
+		Data scientist and analyst specializing in predictive modeling, business intelligence, and algorithmic systems. Track record of measurable impact across gaming, healthtech, and finance.
+	</p>
+	<div class="hero-cta">
+		<a href="#projects" class="btn btn-primary">View Projects →</a>
+		<a href="Lee_Justin_Resume.docx" download class="btn btn-outline">Download Resume</a>
+	</div>
+
+	<div class="hero-stats">
+		<div>
+			<div class="stat-num">10M+</div>
+			<div class="stat-label">App downloads driven</div>
+		</div>
+		<div>
+			<div class="stat-num">112%</div>
+			<div class="stat-label">Simulated trading ROI</div>
+		</div>
+		<div>
+			<div class="stat-num">40%</div>
+			<div class="stat-label">Booking time reduction</div>
+		</div>
+	</div>
+</section>
+
+<section id="about">
+	<div class="section-label">About me</div>
+	<div class="about-grid">
+		<div class="about-text fade-up">
+			<h2>Data-driven thinker,<br>builder at heart.</h2>
+			<p>I'm a <strong>Statistics & Data Science + Mathematics of Computation</strong> student at UCLA, graduating June 2027. My work spans machine learning, business intelligence, and quantitative research, always oriented toward practical, measurable outcomes.</p>
+			<p>I've worked across gaming analytics (<strong>Dalcomsoft, 433 Inc.</strong>) and healthcare operations (<strong>Corner Health</strong>), where I learned that the best analysis isn't just technically sound. It changes decisions. I care about the full pipeline: from messy raw data to a clean insight someone acts on.</p>
+			<p>Outside of work, I compete in archery, medaling at West Regionals and Nationals, and spend time on competitive game analysis, which sharpens the same pattern-recognition instincts I use professionally.</p>
+			<a href="Lee_Justin_Resume.docx" download class="btn btn-outline" style="margin-top:14px;display:inline-flex;">Download Full Resume</a>
+		</div>
+		<div class="about-details fade-up">
+			<div class="detail-row">
+				<span class="detail-key">Education</span>
+				<span class="detail-val">B.S. Statistics & Data Science + Mathematics of Computation<br>University of California, Los Angeles</span>
 			</div>
+			<div class="detail-row">
+				<span class="detail-key">Expected graduation</span>
+				<span class="detail-val">June 2027</span>
+			</div>
+			<div class="detail-row">
+				<span class="detail-key">Current role</span>
+				<span class="detail-val">Business Operations & Data Analytics Intern<br>Corner Health, Los Angeles</span>
+			</div>
+			<div class="detail-row">
+				<span class="detail-key">LinkedIn</span>
+				<span class="detail-val"><a href="https://www.linkedin.com/in/justinminseoklee/" target="_blank">linkedin.com/in/justinminseoklee</a></span>
+			</div>
+			<div class="detail-row">
+				<span class="detail-key">GitHub</span>
+				<span class="detail-val"><a href="https://github.com/JustinLee23" target="_blank">github.com/JustinLee23</a></span>
+			</div>
+			<div class="detail-row">
+				<span class="detail-key">Email</span>
+				<span class="detail-val"><a href="mailto:justin1275lee@gmail.com">justin1275lee@gmail.com</a></span>
+			</div>
+		</div>
+	</div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<section id="skills">
+	<div class="section-label">Skills</div>
+	<h2>Tools of the trade.</h2>
+	<div class="skills-grid fade-up">
+		<div class="skill-card">
+			<div class="skill-card-title">Languages</div>
+			<div class="skill-tags">
+				<span class="skill-tag">Python</span><span class="skill-tag">R</span><span class="skill-tag">SQL</span><span class="skill-tag">Java</span><span class="skill-tag">C++</span><span class="skill-tag">HTML</span>
+			</div>
+		</div>
+		<div class="skill-card">
+			<div class="skill-card-title">Libraries & ML</div>
+			<div class="skill-tags">
+				<span class="skill-tag">pandas</span><span class="skill-tag">numpy</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">seaborn</span><span class="skill-tag">TA-Lib</span><span class="skill-tag">XGBoost</span>
+			</div>
+		</div>
+		<div class="skill-card">
+			<div class="skill-card-title">BI & Analytics</div>
+			<div class="skill-tags">
+				<span class="skill-tag">Tableau</span><span class="skill-tag">Power BI</span><span class="skill-tag">Excel</span><span class="skill-tag">MySQL</span><span class="skill-tag">SSMS</span><span class="skill-tag">MATLAB</span>
+			</div>
+		</div>
+		<div class="skill-card">
+			<div class="skill-card-title">Systems & Infra</div>
+			<div class="skill-tags">
+				<span class="skill-tag">AWS</span><span class="skill-tag">Git</span><span class="skill-tag">LaTeX</span><span class="skill-tag">GatherUp</span>
+			</div>
+		</div>
+	</div>
+</section>
 
-	</body>
+<section id="projects">
+	<div class="section-label">Projects</div>
+	<h2>Selected work.</h2>
+	<div class="filter-bar">
+		<button class="filter-btn active" data-filter="all">All</button>
+		<button class="filter-btn" data-filter="project">Projects</button>
+		<button class="filter-btn" data-filter="internship">Internships</button>
+	</div>
+	<div class="projects-grid">
+
+		<!-- ALGORITHMIC TRADING MODEL — work in progress, commented out until ready
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">Nov 2025 – Present</span></div>
+			<h3>Algorithmic Trading Model</h3>
+			<p>Engineered a machine learning trading algorithm using Pandas, NumPy, and scikit-learn to process 1.2M+ stock records. Achieved a 112% simulated ROI over 9 months via a custom viral momentum factor model, with Sharpe ratio and drawdown analysis for risk-adjusted evaluation.</p>
+			<div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">scikit-learn</span><span class="tech-pill">pandas</span><span class="tech-pill">NumPy</span><span class="tech-pill">TA-Lib</span></div>
+		</div>
+		-->
+
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">Fall 2025</span></div>
+			<h3>Fungal Competition Modeling via ODEs</h3>
+			<p>Designed and implemented a dynamic ODE system to model fungal population dynamics and biomass decomposition. Integrated Gaussian moisture response functions and competitive interaction matrices. Parameter sweeps and stochastic simulations showed how biodiversity stabilizes long-term decomposition.</p>
+			<a href="Fungal_Activity_Model.pdf" class="project-link">View Project →</a>
+			<div class="project-tech"><span class="tech-pill">MATLAB</span><span class="tech-pill">ODE Systems</span><span class="tech-pill">Stochastic Sim</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">Aug to Dec 2025</span></div>
+			<h3>Skin Cancer Classification Model</h3>
+			<p>Built and compared Logistic Regression, Random Forest, and XGBoost models on 50,000 samples. Reduced 49 predictors to 18 via chi-squared and t-tests. Achieved 70.6% Kaggle accuracy, showing that rigorous feature engineering can outperform model complexity.</p>
+			<a href="Skin_Cancer.pdf" class="project-link">View Project →</a>
+			<div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">XGBoost</span><span class="tech-pill">scikit-learn</span><span class="tech-pill">missForest</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="internship">
+			<div class="project-meta"><span class="project-tag tag-internship">Internship</span><span class="project-timeframe">Corner Health · 2025</span></div>
+			<h3>Healthcare Operations BI Dashboard</h3>
+			<p>Built dashboards tracking 10+ operational KPIs across 25+ clinics in real time. Analysis contributed directly to a strategic partnership with Anthem Blue Cross and identified $500K+ in new revenue opportunities across 3+ states.</p>
+			<div class="project-tech"><span class="tech-pill">Power BI</span><span class="tech-pill">SQL</span><span class="tech-pill">Excel</span><span class="tech-pill">KPI Design</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">Dalcomsoft · 2024</span></div>
+			<h3>Power BI Sales Insights</h3>
+			<p>Analyzed 2M+ sales transactions across 14 Indian markets for AtliQ Hardware. Revealed a 65.6% revenue decline, a 41.97% single-customer dependency, and geographic risk factors, with strategic recommendations for market diversification and crisis management.</p>
+			<a href="Sales_Insights.pdf" class="project-link">View Project →</a>
+			<div class="project-tech"><span class="tech-pill">Power BI</span><span class="tech-pill">DAX</span><span class="tech-pill">SQL</span><span class="tech-pill">Data Modeling</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">Ongoing</span></div>
+			<h3>Interactive Stock Market Dashboard</h3>
+			<p>Developed an interactive Tableau dashboard visualizing multi-year stock data for major companies. Analyzed trading volume spikes, daily percent price changes, and volatility patterns with drill-down interactivity into correlations and market behavior.</p>
+			<a href="https://public.tableau.com/app/profile/justin.lee6819/viz/Interactive_Stock_Market/StockMarketDashboard" target="_blank" class="project-link">View on Tableau Public →</a>
+			<div class="project-tech"><span class="tech-pill">Tableau</span><span class="tech-pill">Calculated Fields</span><span class="tech-pill">Market Data</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="internship">
+  			<div class="project-meta"><span class="project-tag tag-internship">Internship</span><span class="project-timeframe">Dalcomsoft · 2024</span></div>
+  			<h3>Game Analytics & Growth Optimization</h3>
+			<p>Led data-driven growth initiatives for SuperStar SMTown, increasing DAU by 20% through SQL dashboards, A/B testing, and cohort analysis. Analyzed millions of gameplay events to identify retention drivers and optimize live operations. Built predictive demand models and evaluated ARPU and conversion metrics across international launches, contributing to $100K+ in first-day revenue.</p>
+			<div class="project-tech"><span class="tech-pill">SQL</span><span class="tech-pill">A/B Testing</span><span class="tech-pill">Cohort Analysis</span><span class="tech-pill">Game Analytics</span><span class="tech-pill">Forecasting</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="project">
+			<div class="project-meta"><span class="project-tag tag-project">Project</span><span class="project-timeframe">UCLA Statistics · 2024</span></div>
+			<h3>Cognitive Performance and Temperature: R Analysis</h3>
+			<p>Factorial experiment evaluating ambient temperature and IQ level on arithmetic test performance. Conducted two-way ANOVA with blocking, Tukey HSD post-hoc, and residual diagnostics. Found that lower-IQ participants show greater performance decline under thermal stress.</p>
+			<a href="Cognitive_Temperature.pdf" class="project-link">View Project →</a>
+			<div class="project-tech"><span class="tech-pill">R</span><span class="tech-pill">ANOVA</span><span class="tech-pill">Tukey HSD</span><span class="tech-pill">Experimental Design</span></div>
+		</div>
+
+		<div class="project-card fade-up" data-category="internship">
+			<div class="project-meta"><span class="project-tag tag-internship">Internship</span><span class="project-timeframe">Four Thirty Three · 2023</span></div>
+			<h3>Cross-Platform Campaign Analytics</h3>
+			<p>Tracked and optimized CTR and conversion metrics across automated cross-platform campaigns, contributing to 10M+ app downloads within 3 months. Increased DAU by 8% in the first month through segmented A/B testing and competitive benchmarking via Data.AI and Sensor Tower.</p>
+			<div class="project-tech"><span class="tech-pill">Data.AI</span><span class="tech-pill">Sensor Tower</span><span class="tech-pill">A/B Testing</span><span class="tech-pill">SQL</span></div>
+		</div>
+
+	</div>
+</section>
+
+<section id="experience">
+	<div class="section-label">Experience</div>
+	<h2>Where I've worked.</h2>
+	<div class="experience-list">
+		<div class="exp-item fade-up">
+			<div class="exp-date">Aug 2025 – Present</div>
+			<div class="exp-content">
+				<h3>Business Operations & Data Analytics Intern</h3>
+				<div class="exp-company">Corner Health <span>· Los Angeles, CA</span></div>
+				<ul class="exp-bullets">
+					<li>Analyzed workflow datasets across <strong>25+ medical practices</strong>, reducing booking time by <strong>40%</strong></li>
+					<li>Proved <strong>95%+ operational efficiency improvement</strong>, securing partnership with <strong>Anthem Blue Cross</strong></li>
+					<li>Identified <strong>$500K+ in new revenue</strong> via EDA on 3+ state expansion markets</li>
+					<li>Built real-time dashboards tracking <strong>10+ KPIs</strong> across 25+ clinics for executive leadership</li>
+				</ul>
+			</div>
+		</div>
+		<div class="exp-item fade-up">
+			<div class="exp-date">Jul – Sep 2024</div>
+			<div class="exp-content">
+				<h3>Data Science Intern</h3>
+				<div class="exp-company">Dalcomsoft <span>· Los Angeles, CA</span></div>
+				<ul class="exp-bullets">
+					<li>Drove <strong>20% increase in DAU</strong> for SuperStar SMTown via gamification and A/B testing</li>
+					<li>Generated <strong>$100K+ in first-day sales</strong> for international launches in Toronto and London</li>
+					<li>Analyzed player behavior across <strong>millions of gameplay events</strong> to inform live ops and feature releases</li>
+				</ul>
+			</div>
+		</div>
+		<div class="exp-item fade-up">
+			<div class="exp-date">Jun – Aug 2023</div>
+			<div class="exp-content">
+				<h3>Data Marketing Intern</h3>
+				<div class="exp-company">Four Thirty Three Inc. (433) <span>· Seoul, South Korea</span></div>
+				<ul class="exp-bullets">
+					<li>Contributed to <strong>10M+ application downloads</strong> within 3 months via CTR and conversion optimization</li>
+					<li>Increased <strong>DAU by 8%</strong> in the first month through segmented A/B campaigns for U.S. markets</li>
+					<li>Benchmarked competitor ARPU and retention using Data.AI and Sensor Tower to guide product strategy</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer-brand">Justin Lee</div>
+	<ul class="footer-links">
+		<li><a href="https://www.linkedin.com/in/justinminseoklee/" target="_blank">LinkedIn</a></li>
+		<li><a href="https://github.com/JustinLee23" target="_blank">GitHub</a></li>
+		<li><a href="https://public.tableau.com/app/profile/justin.lee6819" target="_blank">Tableau</a></li>
+		<li><a href="mailto:justin1275lee@gmail.com">Email</a></li>
+		<li><a href="Lee_Justin_Resume.docx" download>Download CV</a></li>
+	</ul>
+	<div class="footer-copy">© 2025 Justin Lee</div>
+</footer>
+
+<script>
+	document.querySelectorAll('.filter-btn').forEach(btn => {
+		btn.addEventListener('click', () => {
+			document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			const f = btn.dataset.filter;
+			document.querySelectorAll('.project-card').forEach(c => {
+				c.classList.toggle('hidden', f !== 'all' && c.dataset.category !== f);
+			});
+		});
+	});
+
+	const obs = new IntersectionObserver(entries => {
+		entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+	}, { threshold: 0.1 });
+
+	document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
 </html>
